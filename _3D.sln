@@ -8,11 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EGE", "EGE", "{99633736-0091-490F-9287-7AD451174046}"
 	ProjectSection(SolutionItems) = preProject
 		EGE20.08\ege.h = EGE20.08\ege.h
-		EGE\ege.h = EGE\ege.h
 		EGE20.08\graphics.h = EGE20.08\graphics.h
-		EGE\graphics.h = EGE\graphics.h
 		EGE20.08\graphics64.lib = EGE20.08\graphics64.lib
-		EGE\graphics64.lib = EGE\graphics64.lib
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{B19BB448-6CDE-46B3-8594-DCB9904AE5E2}"
