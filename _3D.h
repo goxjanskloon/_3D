@@ -1,5 +1,5 @@
 #pragma once
-#include"EGE20.08/graphics.h"
+#include"EGE/graphics.h"
 #include<algorithm>
 #include<utility>
 #include<array>

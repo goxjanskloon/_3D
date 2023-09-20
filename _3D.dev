@@ -24,12 +24,12 @@ HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
 CommandLine=
-Folders=EGE20.08,EGE20.08/ege
+Folders=EGE
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=11
+UnitCount=6
 
 [VersionInfo]
 Major=1
@@ -51,9 +51,9 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=EGE20.08\ege\button.h
+FileName=_3D.cpp
 CompileCpp=1
-Folder=EGE20.08/ege
+Folder=
 Compile=1
 Link=1
 Priority=1000
@@ -61,9 +61,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=EGE20.08\ege\egecontrolbase.h
+FileName=_3D.h
 CompileCpp=1
-Folder=EGE20.08/ege
+Folder=
 Compile=1
 Link=1
 Priority=1000
@@ -71,9 +71,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=EGE20.08\ege\fps.h
+FileName=main.cpp
 CompileCpp=1
-Folder=EGE20.08/ege
+Folder=
 Compile=1
 Link=1
 Priority=1000
@@ -81,9 +81,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=EGE20.08\ege\label.h
+FileName=EGE\ege.h
 CompileCpp=1
-Folder=EGE20.08/ege
+Folder=EGE
 Compile=1
 Link=1
 Priority=1000
@@ -91,9 +91,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=EGE20.08\ege\sys_edit.h
+FileName=EGE\graphics.h
 CompileCpp=1
-Folder=EGE20.08/ege
+Folder=EGE
 Compile=1
 Link=1
 Priority=1000
@@ -101,11 +101,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=EGE20.08\ege.h
+FileName=EGE\libgraphics64.a
 CompileCpp=1
-Folder=EGE20.08
-Compile=1
-Link=1
+Folder=EGE
+Compile=0
+Link=0
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
