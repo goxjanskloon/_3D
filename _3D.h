@@ -52,7 +52,7 @@ public:
 		return *this;
 	}
 	point3d center()const{
-		point3d c(0,0,0);
+		point3d c{0,0,0};
 		for(const auto &p:*this){
 			auto b=p.center();
 			c.move(b.x,b.y,b.z);

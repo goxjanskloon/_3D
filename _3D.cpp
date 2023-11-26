@@ -36,7 +36,7 @@ void face3d::render(const int &focal,const int &cx,const int &cy,const PIMAGE &i
 				}
 				c.project(focal);
 			}
-			pnts.emplace_back(cx+c.x2,cy-c.y2);
+			pnts.emplace_back(ege_point{cx+c.x2,cy-c.y2});
 		}
 	}
 	setfillcolor(color,img);
@@ -51,7 +51,7 @@ rect3d::rect3d(const point3d &a,const point3d &b,const color_t(&colors)[6]):cont
 	face3d({{a.x,a.y,b.z},{b.x,a.y,b.z},{b.x,a.y,a.z},{a.x,a.y,a.z}},colors[4]),
 	face3d({{a.x,b.y,b.z},{b.x,b.y,b.z},{b.x,b.y,a.z},{a.x,b.y,a.z}},colors[5])}){}
 std::pair<point3d,point3d> rect3d::collisionbox()const{
-	point3d p1(DBL_MAX,-DBL_MAX,DBL_MAX),p2(-DBL_MAX,DBL_MAX,-DBL_MAX);
+	point3d p1{DBL_MAX,-DBL_MAX,DBL_MAX},p2{-DBL_MAX,DBL_MAX,-DBL_MAX};
 	for(const auto &f:*this)
 		for(const auto &p:f) p1.x=std::min(p1.x,p.x),p1.y=std::max(p1.y,p.y),p1.z=std::min(p1.z,p.z),p2.x=std::max(p2.x,p.x),p2.y=std::min(p2.y,p.y),p2.z=std::max(p2.z,p.z);
 	return std::make_pair(p1,p2);
