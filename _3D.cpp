@@ -36,11 +36,11 @@ void face3d::render(const int &focal,const int &cx,const int &cy,const PIMAGE &i
 				}
 				c.project(focal);
 			}
-			pnts.emplace_back(ege_point{cx+c.x2,cy-c.y2});
+			pnts.emplace_back(ege_point{float(cx+c.x2),float(cy-c.y2)});
 		}
 	}
 	setfillcolor(color,img);
-	setlinestyle(NULL_LINE,NULL,NULL,img);
+	setlinestyle(NULL_LINE,0,0,img);
 	ege_fillpoly(pnts.size(),pnts.data(),img);
 }
 rect3d::rect3d(const point3d &a,const point3d &b,const color_t(&colors)[6]):contnr3d({
